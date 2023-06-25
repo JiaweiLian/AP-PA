@@ -363,7 +363,7 @@ class PatchTransformer(nn.Module):
 
         ############################################################################################
         # scale = target_size / current_patch_size * 4.0  # patch outside targets
-        scale = target_size / current_patch_size  # patch outside targets
+        scale = target_size / current_patch_size  # patch on targets
         ############################################################################################
 
         scale = scale.view(anglesize)
